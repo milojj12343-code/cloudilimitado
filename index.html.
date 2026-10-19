@@ -1,1 +1,121 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050805">
+  <title>Cloudilimitado</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #050805;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 24px 16px;
+      text-align: center;
+      background: #101810;
+      border-bottom: 2px solid #00ff66;
+    }
+    header h1 {
+      color: #00ff66;
+      margin: 0;
+      font-size: 30px;
+    }
+    header p { color: #b9cbbb; }
+    main {
+      max-width: 650px;
+      margin: auto;
+      padding: 18px;
+    }
+    .hero, .game {
+      background: #111811;
+      border: 1px solid #244b2d;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+    .hero { text-align: center; }
+    h2 { color: #00ff66; }
+    .btn {
+      display: block;
+      background: #00e65c;
+      color: #001b09;
+      padding: 14px;
+      border-radius: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+    .secondary {
+      background: #17251a;
+      color: #00ff66;
+      border: 1px solid #00ff66;
+    }
+    .tag { color: #9db5a1; font-size: 13px; }
+    footer {
+      text-align: center;
+      color: #829183;
+      padding: 20px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>☁ Cloudilimitado</h1>
+    <p>Tu mundo gamer, sin límites 🎮</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>¡Bienvenido!</h2>
+      <p>Tu espacio de juegos desde el celular.</p>
+      <p class="tag">Versión inicial · Android</p>
+    </section>
+
+    <h2>🎮 Mis juegos</h2>
+
+    <section class="game">
+      <h3>🟥 Roblox</h3>
+      <p>Explorá millones de experiencias.</p>
+      <a class="btn"
+         href="https://www.roblox.com/"
+         target="_blank" rel="noopener">
+        Abrir Roblox
+      </a>
+    </section>
+
+    <section class="game">
+      <h3>🟩 Minecraft</h3>
+      <p>Construí tu mundo bloque por bloque.</p>
+      <a class="btn"
+         href="https://play.google.com/store/apps/details?id=com.mojang.minecraftpe"
+         target="_blank" rel="noopener">
+        Ver Minecraft para Android
+      </a>
+    </section>
+
+    <section class="game">
+      <h2>☁ Servidor Cloud Gaming</h2>
+      <p id="estado">
+        Todavía no hay un servidor conectado.
+      </p>
+      <button class="btn secondary"
+        onclick="document.getElementById('estado').textContent =
+        'Para transmitir juegos necesitamos configurar un servidor compatible.'">
+        Consultar conexión
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    Cloudilimitado © 2026 · Creado para jugar
+  </footer>
+</body>
+</html>
+
